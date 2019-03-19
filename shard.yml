@@ -1,0 +1,14 @@
+name: name-project
+version: 0.1.0
+
+authors:
+  - Barogthor <noreply@mail.com>
+
+crystal: crystal-version
+license: MIT
+
+dependencies:
+  totem:
+    github: icyleaf/totem
+  mancala:
+    github: alex-lairan/mancala

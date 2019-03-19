@@ -1,0 +1,5 @@
+texture: resources/textures/terrain.png
+tiles:
+  - dirt-1: 0 0 0 100 100
+  - dirt-2: 1 101 101 100 100
+  - grass-1: 2 202 202 100 100

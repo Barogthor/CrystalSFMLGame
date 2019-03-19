@@ -1,19 +1,21 @@
 require "crsfml"
+require "math"
+require "totem"
+require "./Config/Tile"
+require "./Config/Tileset"
+require "./Config/Tilemap"
 
-window = SF::RenderWindow.new(SF::VideoMode.new(800, 600), "My window")
-window.vertical_sync_enabled = true # call it once, after creating the window
-window.framerate_limit = 60 # call it once, after creating the window
+#require "./Event"
+#require "./Component"
+#require "./widget/Widget"
+#require "./widget/SimpleButton"
+#require "./Instance"
+#require "./Application"
+#
+#app = Application.new(SF::VideoMode.new(800,600),"My Window")
+#app.vertical_sync_enabled = false
+#app.framerate_limit = 60
+#app.start
 
+tileset = Tileset.load "resources/pacman.tileset"
 
-# run the program as long as the window is open
-while window.open?
-  # check all the window's events that were triggered since the last iteration of the loop
-    while event = window.poll_event
-        # "close requested" event: we close the window
-        if event.is_a? SF::Event::Closed
-            window.close
-        end
-    end
-    window.clear(SF::Color::Black)
-    window.display
-end
