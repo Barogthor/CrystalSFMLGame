@@ -8,7 +8,7 @@ abstract class Component < SF::Transformable
 
   abstract def on_event(event : SF::Event)
 
-  def draw(target, states)
+  def draw(target : SF::RenderTarget, states : SF::RenderStates)
     states.transform *= transform
     target.draw(self, states)
   end
