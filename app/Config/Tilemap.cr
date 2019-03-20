@@ -33,7 +33,7 @@ class Tilemap
   end
 
   def draw(target : SF::RenderTarget, states : SF::RenderStates)
-    states.transform.scale(2,2)
+    states.transform.scale(1.5,1.5)
     @layers.each do |key, layer|
       if(key!="collision")
         layer.each_with_index do |value, index|
